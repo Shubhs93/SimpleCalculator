@@ -48,11 +48,17 @@ const App = () => {
       console.log(a)
       setInput(parseInt(input) + parseInt(previousNumber))
     }else if(operator ==='-'){
-      setInput(parseInt(input) - parseInt(previousNumber))
+      var a=(previousNumber +"-"+ input);
+      console.log(a)
+      setInput(parseInt(previousNumber) -parseInt(input) )
     }else if(operator ==='*'){
+      var a=(previousNumber +"*"+ input);
+      console.log(a)
       setInput(parseInt(input) * parseInt(previousNumber))
     }else if(operator ==='/'){
-      setInput(parseInt(input) % parseInt(previousNumber))
+      var a=(previousNumber +"/"+ input);
+      console.log(a)
+      setInput (parseInt(previousNumber) / parseInt(input) )
     }
   }
 
